@@ -54,28 +54,28 @@ PROYECTO-RAIZ/
 ### 1. Clonar el repositorio
 
 
-git clone https://github.com/TU_USUARIO/PROYECTO-RAIZ.git
-cd PROYECTO-RAIZ
+    git clone https://github.com/TU_USUARIO/PROYECTO-RAIZ.git
+    cd PROYECTO-RAIZ
 
 2. Configurar el entorno
 
 Crear un archivo .env en la raíz con:
 
-MYSQL_ROOT_PASSWORD=tu_password
-MYSQL_DATABASE=nombre_de_tu_db
-
-MYSQL_HOST=mysql
-MYSQL_USER=root
-MYSQL_PASSWORD=tu_password
-MYSQL_DATABASE=nombre_de_tu_db
-PORT=3000
-JWT_SECRET=clave_super_secreta
+    MYSQL_ROOT_PASSWORD=tu_password
+    MYSQL_DATABASE=nombre_de_tu_db
+    
+    MYSQL_HOST=mysql
+    MYSQL_USER=root
+    MYSQL_PASSWORD=tu_password
+    MYSQL_DATABASE=nombre_de_tu_db
+    PORT=3000
+    JWT_SECRET=clave_super_secreta
 
     ⚠️ Asegurate de que coincidan con docker-compose.yml y src/config/db.js.
 
 3. Levantar los contenedores
 
-sudo docker-compose up --build
+        sudo docker-compose up --build
 
 Esto levanta:
 
@@ -115,8 +115,8 @@ Las tablas mínimas requeridas:
 
 Podés insertar uno manualmente con:
 
-INSERT INTO admins (username, password)
-VALUES ('admin', '$2b$10$gG5vEvbqkZmCcxz8tQjiLuLljY9j0kLQwWR2cRflHTlNqHdPV3oLS');
+    INSERT INTO admins (username, password)
+    VALUES ('admin', '$2b$10$gG5vEvbqkZmCcxz8tQjiLuLljY9j0kLQwWR2cRflHTlNqHdPV3oLS');
 
     La contraseña es admin123
 
