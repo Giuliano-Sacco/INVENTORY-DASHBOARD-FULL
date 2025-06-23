@@ -89,27 +89,27 @@ Esto levanta:
 
 Las tablas mínimas requeridas:
 
-CREATE TABLE admins (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  username VARCHAR(50) NOT NULL,
-  password VARCHAR(255) NOT NULL
-);
-
-CREATE TABLE products (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  name VARCHAR(100) NOT NULL,
-  description TEXT,
-  quantity INT DEFAULT 0
-);
-
-CREATE TABLE stock_movements (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  product_id INT,
-  type ENUM('in', 'out'),
-  quantity INT,
-  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-  FOREIGN KEY (product_id) REFERENCES products(id)
-);
+    CREATE TABLE admins (
+      id INT AUTO_INCREMENT PRIMARY KEY,
+      username VARCHAR(50) NOT NULL,
+      password VARCHAR(255) NOT NULL
+    );
+    
+    CREATE TABLE products (
+      id INT AUTO_INCREMENT PRIMARY KEY,
+      name VARCHAR(100) NOT NULL,
+      description TEXT,
+      quantity INT DEFAULT 0
+    );
+    
+    CREATE TABLE stock_movements (
+      id INT AUTO_INCREMENT PRIMARY KEY,
+      product_id INT,
+      type ENUM('in', 'out'),
+      quantity INT,
+      created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+      FOREIGN KEY (product_id) REFERENCES products(id)
+    );
 
 🧪 Usuario admin de prueba
 
