@@ -53,11 +53,9 @@ PROYECTO-RAIZ/
 
 ### 1. Clonar el repositorio
 
-```bash
+
 git clone https://github.com/TU_USUARIO/PROYECTO-RAIZ.git
 cd PROYECTO-RAIZ
-
----bash
 
 2. Configurar el entorno
 
