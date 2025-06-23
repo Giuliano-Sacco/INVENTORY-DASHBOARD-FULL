@@ -136,12 +136,3 @@ GitHub: Giuliano-Sacco
 📃 Licencia
 
 MIT © 2025
-
-
----
-
-¿Querés que también te lo genere como `.md` real o PDF? Te puedo hacer ambos con gusto.
-
-
-ChatGPT can make mistakes. Check important info.
-
